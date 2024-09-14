@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Funciones Tarea</title>
+</head>
+<body>
+    <header>JavaScript</header>
+    <section id="resultados">
+        <h2>Funciones</h2>
+
+        <div>
+            CALCULAR LA SUPERFICIE DE UN TRIÁNGULO, SOLICITAR AL USUARIO BASE Y ALTURA
+            <br>
+            <label for="base">Ingrese la base:</label>
+            <input type="text" id="base" name="base">      
+            <br>
+            <label for="altura">Ingrese la altura:</label>
+            <input type="text" id="altura" name="altura">   
+            <br>
+            <button onclick="calcularArea()">Calcular Área</button>
+            <p id="resultadoArea"></p>         
+        </div>
+
+        <br><br>
+
+        <div>
+            SOLICITAR A UN USUARIO 5 DATOS PERSONALES E IMPRIMIRLOS EN UNA SECCIÓN
+            <br>
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" id="nombre" name="nombre">  
+            <br>
+            <label for="apellidoPaterno">Ingrese su apellido paterno:</label>
+            <input type="text" id="apellidoPaterno" name="apellidoPaterno">  
+            <br>
+            <label for="apellidoMaterno">Ingrese su apellido materno:</label>
+            <input type="text" id="apellidoMaterno" name="apellidoMaterno">  
+            <br>
+            <label for="edad">Ingrese su edad:</label>
+            <input type="text" id="edad" name="edad">  
+            <br>
+            <label for="pelicula">Ingrese su película favorita:</label>
+            <input type="text" id="pelicula" name="pelicula">  
+            <br>
+            <button onclick="imprimir()">Imprimir Resultados</button>
+            <p id="imprimir"></p> 
+        </div>
+
+        <br><br>
+
+        <div>
+            CALCULAR EL SUELDO DE 5 TRABAJADORES EN UNA EMPRESA DE CALZADO, Y OBTENER EL TOTAL DE NOMINA A PAGAR
+            <form id="sueldoForm">
+                <div>
+                    <label for="trabajador1">Sueldo Trabajador 1:</label>
+                    <input type="text" id="trabajador1"  required>
+                </div>
+                <div>
+                    <label for="trabajador2">Sueldo Trabajador 2:</label>
+                    <input type="text" id="trabajador2" required>
+                </div>
+                <div>
+                    <label for="trabajador3">Sueldo Trabajador 3:</label>
+                    <input type="text" id="trabajador3" required>
+                </div>
+                <div>
+                    <label for="trabajador4">Sueldo Trabajador 4:</label>
+                    <input type="text" id="trabajador4" required>
+                </div>
+                <div>
+                    <label for="trabajador5">Sueldo Trabajador 5:</label>
+                    <input type="text" id="trabajador5" required>
+                </div>
+        
+                <button type="button" onclick="calcularNomina()">Calcular Nómina</button>
+            </form>
+        
+            <h2 id="resultadoNomina"></h2>
+        </div>
+
+        <br><br>
+
+        <div>
+            CALCULAR EL PROMEDIO DE UN ALUMNO TENIENDO 3 MATERIAS EN EL CUATRIMESTRE
+            <br>
+            <label for="primera">Primera calificación:</label>
+            <input type="text" name="primera" id="primera">
+            <br>
+            <label for="segunda">Segunda calificación:</label>
+            <input type="text" name="segunda" id="segunda">
+            <br>
+            <label for="tercera">Tercera calificación:</label>
+            <input type="text" name="tercera" id="tercera">
+            <br>
+            <button type="button" onclick="promedio()">Calcular Promedio</button>
+            <p id="ResultadoPromedio"></p>
+        </div>
+    </section>
+
+    <footer>Frameworks de desarrollo web</footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
